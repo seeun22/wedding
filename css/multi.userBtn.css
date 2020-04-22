@@ -1,0 +1,29 @@
+.center{
+    position: relative;
+    width: 1260px;
+    margin: 0 auto;
+}
+#btn{
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+#btn>li{
+    float: left;
+    margin-left: 10px;
+    list-style: none;
+    
+}
+
+#btn>li>a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background:#ccc;
+    text-indent: -9999px;
+}
+
+#btn>li>a.active{
+    background: skyblue;
+}
