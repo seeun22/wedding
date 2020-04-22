@@ -1,0 +1,210 @@
+body {
+    /*    background: black;*/
+    width: 100%;
+    position: relative;
+}
+
+#Wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background: url(../images/mapBg.jpg);
+
+}
+
+.logo {
+    position: absolute;
+    left: 2%;
+    width: 300px;
+    top: 30px;
+    z-index: 1;
+}
+
+.logo img {
+    width: 80%;
+}
+
+
+/*#nav*/
+
+.menuBtn > a {
+    z-index: 100;
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    width: 44px;
+    height: 30px;
+    background: url(../images/icon_menu.png) no-repeat;
+    /*    display: none;*/
+
+}
+
+.nav_area {
+    display: none;
+    position: fixed;
+    background-color: moccasin;
+    width: 20%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    z-index: 100000;
+}
+
+
+.nav_area .closeBtn > a {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 45px;
+    z-index: 1000;
+    top: 70px;
+    right: 40px;
+    background: url(../images/close.png) no-repeat;
+}
+
+
+.nav_area #nav {
+    width: 100%;
+    /*    부모(.nav_area) 넓이값에 자식은 넓이값 100%를 줘야 text-align:center 가운데정렬주면
+    그 넓이값 안에서 가운데 정렬이 됨*/
+    position: absolute;
+    /*    display: block;*/
+    top: 160px;
+    /*    right: -100%;*/
+    text-align: center;
+    line-height: 3.5;
+}
+
+
+
+.nav_area > #nav > li > a {
+    color: hotpink;
+}
+
+.sub {
+    line-height: 2;
+    text-align: center;
+    /*    display: none;*/
+}
+
+.sub a {
+    font-size: 15px;
+    color: hotpink;
+}
+
+.sub > li:hover > a {
+    color: white;
+    font-weight: bold;
+}
+
+.sns {
+    position: absolute;
+    top: 55px;
+    left: 5%;
+}
+
+
+#contents {
+    /*    background-color: coral;*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    position: relative;
+    /*    background-color: cornflowerblue;*/
+    width: 720px;
+    height: 320px;
+    top: 360px;
+    left: 6%;
+    display: block;
+
+}
+
+
+.left > h2 {
+    font-size: 71px;
+    font-weight: 500;
+    color: white;
+}
+
+.leftstick {
+    margin: 50px 0;
+}
+
+.leftText {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 48px;
+    color: white;
+}
+
+
+.right {
+    position: absolute;
+    /*    background-color: mediumslateblue;*/
+    bottom: 60px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    line-height: 45px;
+    width: 748px;
+    right: 156px;
+    font-weight: 100;
+}
+
+#map {
+    width: 36vw;
+    height: 520px;
+    top: 200px;
+    right: 180px;
+    position: absolute;
+    z-index: 100;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .nav_area {
+        width: 30%;
+    }
+
+    #map {
+        width: 80vw;
+        height: 45vh;
+        top: 450px;
+        left: 155px;
+        transform: translateX(-50px);
+    }
+
+    .left {
+        top: 180px;
+        text-align: center;
+        left: 150px;
+    }
+
+    .left > h2 {
+        font-size: 50px;
+    }
+
+    .leftstick {
+        margin: 20px 0;
+    }
+
+    .leftText {
+        font-size: 20px;
+        line-height: 35px
+    }
+    
+    .right{
+        bottom: 105px;
+    }
+}

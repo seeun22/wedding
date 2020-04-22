@@ -1,0 +1,221 @@
+body {
+    height: 100vh;
+     
+  
+}
+
+#Wrap {
+    position: relative;
+     
+}
+
+header {
+    position: relative;
+    width: 100%;
+    z-index: 999999;
+}
+
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    top: 30px;
+    
+}
+
+.logo img{
+    width: 100%;
+}
+
+
+
+
+.menuBtn > a {
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    width: 44px;
+    height: 30px;
+    background: url(../images/icon_menu.png) no-repeat;
+
+}
+
+
+.nav_area{
+    display: none;
+    position: fixed;
+    background-color: moccasin;
+    width: 20%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+}
+
+
+.nav_area .closeBtn > a {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 45px;
+    z-index: 1000;
+    top: 70px;
+    right: 40px;
+    background: url(../images/close.png) no-repeat;
+}
+
+
+.nav_area #nav {
+    width: 100%;
+/*    부모(.nav_area) 넓이값에 자식은 넓이값 100%를 줘야 text-align:center 가운데정렬주면
+    그 넓이값 안에서 가운데 정렬이 됨*/
+    position: absolute;
+/*    display: block;*/
+    top: 160px;
+/*    right: -100%;*/
+    text-align: center;
+    line-height: 3.5;
+}
+
+
+
+.nav_area>#nav>li>a {
+    color: hotpink;
+}
+
+.sub {
+    line-height: 2;
+    text-align: center;
+/*    display: none;*/
+}
+
+.sub a {
+    font-size: 15px;
+    color:hotpink;
+}
+
+.sub>li:hover>a{
+    color: white;
+    font-weight: bold;
+}
+
+.sns {
+    position: absolute;
+    top: 55px;
+    left: 5%;
+}
+
+#visual {
+    position: relative;
+    height: 100vh;
+
+}
+
+
+.banner > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+       
+}
+
+.banner > .banner1 {
+    display: block;
+   
+}
+
+.banner > li > a {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 2s;
+}
+
+.banner > .banner1 a {
+    background-image: url(../images/banner2.jpg);
+}
+
+
+.banner > .banner2 a {
+    background-image: url(../images/banner4.jpg);
+}
+
+
+.banner > .banner3 a {
+    background-image: url(../images/banner6.jpg);
+}
+
+
+.Text {
+    position: absolute;
+    left: 75px;
+    bottom: 50px;
+}
+
+.Text > p {
+    color: white;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+/*mobile 705px*/
+@media screen and (max-width:705px){
+    .sns img{
+        width: 80%;
+        margin-top: 13px;
+        
+    }
+    
+    .Text{
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-width:415px){
+    
+    .logo{
+        text-align: center;
+    }
+    .logo img{
+        width: 60%;
+    }
+    .sns{
+        left: 25px;
+    }
+    .sns img{
+        width: 60%;
+    }
+    
+    .menuBtn>a{
+       display: inline-block;
+        width: 8%;
+        right: 23px;
+
+    }
+    
+    
+    .Text{
+        font-size: 14px;
+        line-height: 2;
+        text-align: center;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width:411px){
+    .Text{
+       left: 10px;
+    }
+}
